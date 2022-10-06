@@ -1,0 +1,220 @@
+:root {
+    --black: black;
+    --orange: orange;
+}
+* {
+    /* background-color: orange; */
+    box-sizing: content-box;
+    padding: 0;
+    overflow-x:hidden;
+}
+.heading {
+    z-index:1;
+    padding: 0 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: var(--black);
+    color:var(--orange);
+}
+.logo {
+    display: flex;
+    flex-direction: row;
+}
+.menu {
+    
+}
+.menu ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    flex-wrap: wrap;
+}
+.menu ul li {
+    margin-left:2.3rem;
+}
+.menu ul li:hover{
+    cursor: pointer;
+    color: var(--black);
+}
+/* EXTRAS */
+.extras {
+    background-color: var(--orange);
+    padding-bottom: 1rem;
+}
+.extras-heading {
+    display: flex;
+    justify-content: center;
+    font-size: 32px;
+    font-family:'Times New Roman', Times, serif;
+    background-image: linear-gradient(to right, red, black, cyan);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.exhibit{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.exhibit img#exhibit {
+    width: 250px;
+    height:250px;
+    background-size: cover;
+    border-radius:50%;
+
+}
+#extras-text{
+    border: 2px solid var(--orange);
+    width: 200px;
+    position: relative;
+    top: 100px;
+    justify-content: center;
+    display: flex;
+    margin:auto;
+    z-index: -1;
+    padding: 2rem;
+    background-color: var(--orange);
+}
+.button {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    z-index: 100;
+}
+
+
+/* BACKGROUND IMAGE */
+.background-image {
+    margin-top: 50px;
+    background-image: url(images/slideshow-painting3.jpg);
+    width: 100%;
+    height: 25rem;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+    position: absolute;
+    z-index: -1; /* without the position property, the z-index property cannot work*/
+
+}
+.background-image::after{
+    content: '';
+    position: absolute;
+    left:0;
+    top:0;
+    height: 100%; 
+    width: 100%;
+    background-color: var(--orange);
+    opacity: .3;
+    z-index: -1;
+}
+
+#image-btn {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-top: 5rem;
+    color: var(--orange);
+    background-color: var(--black);
+    padding: 1rem 1.5rem;
+    border-radius: 10px 5px 10px 25px;
+}
+a#image-btn{
+    text-decoration: none;
+}
+/* Service */
+.services{
+    /* background-color: var(--orange); */
+    margin-top: 500px;
+    
+}
+.icon img {
+    width: 72px;
+    height: 72px;
+    object-fit: cover;
+}
+.services-heading h1 {
+    width:max-content;
+    margin: auto;
+}
+.services-heading h1 span {
+    color: var(--orange);
+}
+.service-tags{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.service-info {
+    position: relative;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    /* flex-basis: 80%; */
+    padding: 20px;
+    border-radius: 20%;
+    margin: 10px 15px;
+    background-image: url(images/paints.artiste.jpg);
+    background-size: cover;
+    z-index: 1;
+
+}
+.service-info:hover {
+
+}
+
+.service-info::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: .7;
+    z-index: -1;
+}
+.service-info .service-item h2 {
+    font-size: medium;
+    color: white;
+
+}
+.service-info .service-item p {
+    color: white;
+    font-size: 12px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+/* Contact */
+.contact {
+    background-color: var(--black);
+    margin-top: 50px;
+    color: orange;
+}
+.contact p {
+    color: white;
+}
+.contactme {
+    width: max-content;
+    margin: auto;
+}
+.contactUs{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.card {
+    border: 1px dotted orange;
+    border-radius: 20px;
+    box-shadow: inset 10px 20px 10px orange;
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    
+}
+.card img{
+    margin: auto;
+    height: 50px;
+    width: 50px;
+}
